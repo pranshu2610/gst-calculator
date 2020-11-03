@@ -31,12 +31,8 @@ main()
     case 4:
         cout << "ENTER AMOUNT: ";
         cin >> amt;
-        if (amt >= 1000){
-            cout << "GST applicable 18%: " << amt + amt*0.18 << endl;
-        }
-        else {
-            cout<<"GST not applicable below 1000"<<endl;
-        }
+        if (amt >= 1000)    cout << "GST applicable 18%: " << amt + amt*0.18 << endl;
+        else    cout<<"GST not applicable below 1000"<<endl;
         break;
     case 5:
         cout << "ENTER AMOUNT: ";
@@ -46,12 +42,8 @@ main()
     case 6:
         cout << "ENTER AMOUNT: ";
         cin >> amt;
-        if (amt >= 100){
-            cout << "GST applicable 28% + Cess 1%: " << amt + amt*0.29 << endl;
-        }
-        else {
-            cout<<"GST applicable 28% + No Cess: " << amt + amt*0.28 << endl;
-        }
+        if (amt >= 100)     cout << "GST applicable 28% + Cess 1%: " << amt + amt*0.29 << endl;
+        else    cout<<"GST applicable 28% + No Cess: " << amt + amt*0.28 << endl;
         break;
     default:
         cout << "Wrong Choice" << endl;
